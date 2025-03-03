@@ -7,9 +7,10 @@ import { useState } from 'react';
 
 
 function Sidebar(props:any) {
-const [hover, SetHover] = useState(false)
+const [hover, setHover] = useState(false)
+const [active, setActive] = useState(false)
 const toggleHover = () => {
-  SetHover(!hover)
+  setHover(!hover)
 }
   return (
     <div className={`sidebar-wrapper ${props.rotate == true? 'closed-bar': 'open-bar'}`}>
@@ -18,15 +19,15 @@ const toggleHover = () => {
       </button>
       <div className="sidebar-top-wrapper">
         <div className="sidebar-words"><FontAwesomeIcon icon={faClock}/>  Clock <span style={{color: '#8ACB88'}}>Work</span></div>
-       <a href="#" className="username">Logan Hirschi</a>
+        <div className="username" >Logan Hirschi <a className="link" href="#">Logout</a>  </div>
       </div>
       <div className="sidebar-bottom-wrapper">
-        <Sidebutton name="Dashboard" icon={faClock} setActiveId={props.setActiveId} />
-        <Sidebutton name="Timer" icon={faStopwatch20} setActiveId={props.setActiveId} />
-        <Sidebutton name="Projects" icon={faFolder} setActiveId={props.setActiveId}  />
-        <Sidebutton name="Team" icon={faPerson} setActiveId={props.setActiveId}  />
-        <Sidebutton name="Reports" icon={faPaperclip} setActiveId={props.setActiveId} />
-        <Sidebutton name="Settings" icon={faCog} setActiveId={props.setActiveId} />
+        <Sidebutton activeId={props.activeId} name="Dashboard" icon={faClock} setActiveId={props.setActiveId} />
+        <Sidebutton activeId={props.activeId} name="Timer" icon={faStopwatch20} setActiveId={props.setActiveId} />
+        <Sidebutton activeId={props.activeId} name="Projects" icon={faFolder} setActiveId={props.setActiveId}  />
+        <Sidebutton activeId={props.activeId} name="Team" icon={faPerson} setActiveId={props.setActiveId}  />
+        <Sidebutton activeId={props.activeId} name="Reports" icon={faPaperclip} setActiveId={props.setActiveId} />
+        <Sidebutton activeId={props.activeId} name="Settings" icon={faCog} setActiveId={props.setActiveId} />
       </div>
     </div>
   );

@@ -3,9 +3,10 @@
   min-height: 100vh;
   z-index: 1;
   padding: 50px;
-  border: solid 2px black;
+  margin: auto;
+  display: block;
+  text-align: center;
 }
-
 
 .active {
   display: block
@@ -13,4 +14,20 @@
 
 .unactive {
   display: none
+}
+
+.dash-top-wrapper {
+  display: flex;
+  width: 100%;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding: 200px 0px;
+}
+
+.timer-details-wrapper {
+  flex: 1;
+}
+
+.projects-details-wrapper {
+  flex: 1;
 }

@@ -25,10 +25,14 @@
 
 .username {
   font-size: 20px;
+  color: #E4FDE1;
+}
+
+.link {
   color: black;
 }
 
-.username:hover { 
+.link:hover {
   color: #8ACB88;
 }
 
@@ -104,13 +108,13 @@
   transform:rotate(0deg);
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1375px) {
   .sidebar-words {
     margin-top:20px;
-    font-size:25px;
+    font-size:28px;
   }
 
   .username {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
