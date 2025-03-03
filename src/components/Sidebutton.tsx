@@ -1,12 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Sidebutton.css';
+import { useState } from 'react'
 
 function Sidebutton(props:any) {
-  const activateLink = () => {
-    console.log("CLICKING")
-  }
   return (
-    <button onClick={activateLink} className="button_slide slide_right"> <FontAwesomeIcon icon={props.icon}/> {props.name} </button>
+    <button className={`button-slide slide-right ${props.name === "Dashboard"? 'active-side-button': ''}`}onClick={() => props.setActiveId(props.name)} > <FontAwesomeIcon icon={props.icon}/> {String(props.name)} </button>
   );
 }
 

@@ -1,7 +1,7 @@
 .sidebar-wrapper {
   flex: 1;
   width: 9em;
-  min-width: 200px;
+  min-width: 235px;
   min-height: 100vh;
   z-index: 10;
   background-color: #648381;
@@ -23,16 +23,25 @@
   padding-left: 10px;
 }
 
+.username {
+  font-size: 20px;
+  color: black;
+}
+
+.username:hover { 
+  color: #8ACB88;
+}
+
 .sidebar-bottom-wrapper {
   height: 90vh;
-  width: 80%;
+  width: 85%;
   margin-top: 10px;
   display:flex;
   flex-direction: column;
 }
 
 .toggle-sidebar {
-  color: black;
+  color:#648381;
   box-shadow: 3px 3px 2px #648381;
   background-color: #E4FDE1;
   border-color: #8ACB88;
@@ -60,21 +69,21 @@
   -moz-transition: all .5s linear;
   -webkit-transition: all .5s linear;
   transition: all .5s linear;
-  -moz-transform:translateX(-150px);
-  -webkit-transform:translateX(-150px);
-  transform:translateX(-150px);
+  -moz-transform:translateX(-200px);
+  -webkit-transform:translateX(-200px);
+  transform:translateX(-200px);
 }
-
 
 .arrow-sidebar {
   font-size: 30px;
-  color:#648381;
   width: 30px;
 
 }
 
-.Toggle-sidebar:hover {
+.toggle-sidebar:hover {
   cursor: pointer;
+  background-color: #648381;
+  color: #E4FDE1 !important;
 }
 
 .rotate-right {
@@ -93,4 +102,15 @@
   -moz-transform:rotate(0deg);
   -webkit-transform:rotate(0deg);
   transform:rotate(0deg);
+}
+
+@media only screen and (max-width: 1300px) {
+  .sidebar-words {
+    margin-top:20px;
+    font-size:25px;
+  }
+
+  .username {
+    font-size: 15px;
+  }
 }

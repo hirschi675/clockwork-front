@@ -1,4 +1,4 @@
-.button_slide {
+.button-slide {
   background: none;
 	color: inherit;
 	border: none;
@@ -23,6 +23,10 @@
   transition: ease-out 0.4s;
 }
 
-.slide_right:hover {
+.slide-right:hover {
   box-shadow: inset 400px 0 0 0 #8ACB88;
+}
+
+.active-side-button {
+  background-color: #8ACB88;
 }

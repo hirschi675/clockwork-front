@@ -5,3 +5,11 @@
   font-size: calc(10px + 2vmin);
   color: black;
 }
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}

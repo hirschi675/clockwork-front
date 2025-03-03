@@ -1,0 +1,16 @@
+.page-wrapper {
+  flex: 4;
+  min-height: 100vh;
+  z-index: 1;
+  padding: 50px;
+  border: solid 2px black;
+}
+
+
+.active {
+  display: block
+}
+
+.unactive {
+  display: none
+}
