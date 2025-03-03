@@ -1,15 +1,41 @@
-.Sidebar-wrapper {
-  width: 8em;
+.sidebar-wrapper {
   flex: 1;
-  background-color: #648381;
+  width: 9em;
+  min-width: 200px;
   min-height: 100vh;
+  z-index: 10;
+  background-color: #648381;
 }
 
-.Toggle-sidebar {
+.sidebar-top-wrapper {
+  height: 10vh;
+  display: flex;
+  border-bottom: #E4FDE1 solid 3px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  margin-top:10px;
+}
+
+.sidebar-words {
+  color: #E4FDE1;
+  font-size:35px;
+  padding-left: 10px;
+}
+
+.sidebar-bottom-wrapper {
+  height: 90vh;
+  width: 80%;
+  margin-top: 10px;
+  display:flex;
+  flex-direction: column;
+}
+
+.toggle-sidebar {
   color: black;
   box-shadow: 3px 3px 2px #648381;
-  background-color: #8ACB88;
-  border-color: #E4FDE1;
+  background-color: #E4FDE1;
+  border-color: #8ACB88;
   border-width: 5px;
   border-style: solid;
   border-radius: 50%;
@@ -17,12 +43,33 @@
   margin-right: -30px;
   padding: 10px;
   float: right;
+  clear:both;
+  position:relative;
 }
 
-.Arrow-sidebar {
-  font-size: 40px;
+.open-bar {
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  -moz-transform:translateX(0px);
+  -webkit-transform:translateX(0px);
+  transform:translateX(0px);
+}
+
+.closed-bar {
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  -moz-transform:translateX(-150px);
+  -webkit-transform:translateX(-150px);
+  transform:translateX(-150px);
+}
+
+
+.arrow-sidebar {
+  font-size: 30px;
   color:#648381;
-  width: 40px;
+  width: 30px;
 
 }
 
@@ -30,13 +77,20 @@
   cursor: pointer;
 }
 
-.rotate {
+.rotate-right {
   -moz-transition: all .5s linear;
   -webkit-transition: all .5s linear;
   transition: all .5s linear;
-}
-.rotate.right {
   -moz-transform:rotate(180deg);
   -webkit-transform:rotate(180deg);
   transform:rotate(180deg);
+}
+
+.rotate-left {
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  -moz-transform:rotate(0deg);
+  -webkit-transform:rotate(0deg);
+  transform:rotate(0deg);
 }
