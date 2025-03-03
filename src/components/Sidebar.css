@@ -5,6 +5,7 @@
   min-height: 100vh;
   z-index: 10;
   background-color: #648381;
+  position: fixed;
 }
 
 .sidebar-top-wrapper {
@@ -19,7 +20,7 @@
 
 .sidebar-words {
   color: #E4FDE1;
-  font-size:35px;
+  font-size:30px;
   padding-left: 10px;
 }
 
@@ -29,7 +30,7 @@
 }
 
 .link {
-  color: black;
+  color: #303030;
 }
 
 .link:hover {
@@ -111,10 +112,10 @@
 @media only screen and (max-width: 1375px) {
   .sidebar-words {
     margin-top:20px;
-    font-size:28px;
+    font-size:25px;
   }
 
   .username {
-    font-size: 14px;
+    font-size: 20px;
   }
 }

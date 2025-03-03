@@ -6,7 +6,7 @@ import ProjectsDetails from './details/ProjectsDetails'
 
 function Dashboard(props:any) {
   return (
-    <div className={`page-wrapper ${props.rotate == true? 'closed-bar': 'open-bar'} ${props.activeId === "Dashboard"? 'active': 'inactive'}`}>
+    <div className={`page-wrapper ${props.activeId === "Dashboard"? 'active': 'inactive'}`}>
       <div className="dash-top-wrapper">
         <div className="timer-details-wrapper">
           <TimerDetails />

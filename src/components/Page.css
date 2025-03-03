@@ -1,11 +1,13 @@
 .page-wrapper {
-  flex: 4;
   min-height: 100vh;
   z-index: 1;
   padding: 50px;
   margin: auto;
   display: block;
   text-align: center;
+  position: relative;
+  width: 100%;
+  left: 30px;
 }
 
 .active {
