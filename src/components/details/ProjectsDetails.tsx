@@ -1,9 +1,10 @@
-function ProjectsDetails() {
+function Details(props:any) {
+  const projects = 2;
   return (
-    <div>
-      ProjectsDetails
+    <div className="projects-details-wrapper">
+          <span>Projects</span>
     </div>
-  );
+);
 }
 
-export default ProjectsDetails;
+export default Details

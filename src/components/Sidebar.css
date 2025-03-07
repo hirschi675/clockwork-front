@@ -9,7 +9,7 @@
 }
 
 .sidebar-top-wrapper {
-  height: 10vh;
+  height: 11vh;
   display: flex;
   border-bottom: #E4FDE1 solid 3px;
   margin: auto;
@@ -30,7 +30,7 @@
 }
 
 .link {
-  color: #303030;
+  color: #FFBF46;
 }
 
 .link:hover {

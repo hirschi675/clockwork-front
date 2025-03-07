@@ -7,8 +7,8 @@ import { useState } from 'react';
 
 
 function Sidebar(props:any) {
+var username = "Logan Hirschi"
 const [hover, setHover] = useState(false)
-const [active, setActive] = useState(false)
 const toggleHover = () => {
   setHover(!hover)
 }
@@ -19,7 +19,7 @@ const toggleHover = () => {
       </button>
       <div className="sidebar-top-wrapper">
         <div className="sidebar-words"><FontAwesomeIcon icon={faClock}/>  Clock <span style={{color: '#8ACB88'}}>Work</span></div>
-        <div className="username" >Logan Hirschi <a className="link" href="#">Logout</a>  </div>
+        <div className="username" >{username} <a className="link" href="#">Logout</a>  </div>
       </div>
       <div className="sidebar-bottom-wrapper">
         <Sidebutton activeId={props.activeId} name="Dashboard" icon={faClock} setActiveId={props.setActiveId} />
